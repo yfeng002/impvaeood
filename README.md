@@ -13,13 +13,13 @@ This repository contains an implementation of our methods in paper (https://arxi
 * HDF5 for Python (https://docs.h5py.org/en/stable/)
 
 
-## Training 
-* Toy model
-* * Run `python train_nuscenes-mini.py` to train a bi3dof model with default parameter values and am already processed scene from nuscenes nuscenes-v1.0-mini
+## Train
+* A toy model
+* * Run `python train_nuscenes-mini.py` to train a bi3dof model with default parameter values and an already processed scene from nuscenes-v1.0-mini.
 
-* Prepare your own data
+* With nuScenes or own data sets
 * * Follow the nuScenes' tutorial (https://www.nuscenes.org/nuimages#tutorials) to download the mini set. 
-* * Follow the note in feature_abstraction.py to extract and organize the scene frames. Then run `python feature_abstraction.py` to extract training feature for one time. 
+* * Extract the video frames and place them into a folder structure as described in feature_abstraction.py. Then run `python feature_abstraction.py` to extract features for one time. 
 * * Run `python train_nuscenes-mini.py` to train. See in-script help lines for optional arguments.
 
 
