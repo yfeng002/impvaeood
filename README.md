@@ -15,13 +15,17 @@ This repository contains an implementation of our methods in paper (https://arxi
 
 ## Train
 * A toy model
-  * Run `python train_nuscenes-mini.py` to train a bi3dof model with default parameter values and sample training data that was extracted from a nuScenes v1.0-mini video segment.
+  * Run `python train_nuscenes-mini.py` to train a bi3dof model with default parameter values and a sample clip that was extracted from a nuScenes v1.0-mini video segment.
 
-* With nuScenes or own data sets
+* With nuScenes or other data sets
   * (For nuScenes only) Follow the tutorial (https://www.nuscenes.org/nuimages#tutorials) to download the mini set. 
   * Extract all video frames and place them into a folder structure as described in feature_abstraction.py. Then run `python feature_abstraction.py` to extract features for one time. 
   * Run `python train_nuscenes-mini.py` to train. See in-script help lines for optional arguments.
 
+
+## Test
+* Run `python test.py` to get test scores (for OoD detection) of the sample clip. 
+* To test with other data, follow the note in test.py to prepare test clips.
 
 
 ## Citation
